@@ -1,8 +1,9 @@
-import About from "./pages/about/about";
 import "./App.css";
-import Awal from "./pages/home/awal";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout/layout";
+import Awal from "./pages/home/awal";
+import About from "./pages/about/about";
+import Portofolio from "./pages/portofolio/portofolio";
 
 const router = createBrowserRouter([
   {
@@ -13,10 +14,13 @@ const router = createBrowserRouter([
         index: true,
         element: <Awal />,
       },
-
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/portofolio",
+        element: <Portofolio />,
       },
     ],
   },
